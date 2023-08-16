@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB:Ratings,Reviews,and Where to Watch the Best Movies & TV... imdb.com</title>
+    <link rel="icon" href="/logo/logo.png">
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "test.css">
+</head>
+<body>
+    
+    <div class = "wrapper">
+        <!-- logo -->
+        <div class = "logo">
+            <div class = "container">
+                <p>IMDB<span>Clone.</span></p>
+            </div>
+        </div>
+        <!-- end of logo -->
+        <!-- search container -->
+        <div class = "search-container">
+            <div class = "search-element">
+                <h3>Search Movie:</h3>
+                <input type = "text" class = "form-control" placeholder="Search Movie Title ..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+
+                <div class = "search-list" id = "search-list">
+                    <!-- list here -->
+                    <!-- <div class = "search-list-item">
+                        <div class = "search-item-thumbnail">
+                            <img src = "medium-cover.jpg">
+                        </div>
+                        <div class = "search-item-info">
+                            <h3>Guardians of the Galaxy Vol. 2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- end of search container -->
+
+        <!-- result container -->
+        <div class = "container">
+            <div class = "result-container">
+                <div class = "result-grid" id = "result-grid">
+                    <!-- movie information here -->
+                    <!-- <div class = "movie-poster">
+                        <img src = "medium-cover.jpg" alt = "movie poster">
+                    </div>
+                    <div class = "movie-info">
+                        <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
+                        <ul class = "movie-misc-info">
+                            <li class = "year">Year: 2017</li>
+                            <li class = "rated">Ratings: PG-13</li>
+                            <li class = "released">Released: 05 May 2017</li>
+                        </ul>
+                        <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                        <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                        <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                        <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
+                        <p class = "language"><b>Language:</b> English</p>
+                        <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- end of result container -->
+    </div>
+    <!-- movie app js -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    section-1  -->
+
+
+    <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="images/slide1.jpg" alt="Slide 1">
+          </div>
+          <div class="slide">
+            <img src="images/slide2.jpg" alt="Slide 2">
+          </div>
+          <div class="slide">
+            <img src="images/slide3.jpg" alt="Slide 3">
+          </div>
+          <div class="slide">
+            <img src="images/slide4.jpg" alt="Slide 3">
+          </div>
+          <div class="slide">
+            <img src="images/slide5.jpg" alt="Slide 3">
+          </div>
+        </div>
+        <a class="prev" onclick="prevSlide1()">&#10094;</a>
+        <a class="next" onclick="nextSlide1()">&#10095;</a>
+      </div>
+    
+       <!-- aside-section -->
+       <div class="container">
+        <aside class="aside-section">
+            <h2>up next</h2>
+            <div class="image-grid">
+              <img src="images/side1.jpg" alt="Image 1">
+              <img src="images/side2.jpg" alt="Image 2">
+              <img src="images/side3.jpg" alt="Image 3">
+            </div>
+          </aside>
+    
+    
+       </div>
+    
+       <!-- card-slider -->
+    
+       <div class="slider-container">
+        <h2>Featured today</h2>
+        <div class="card-slider">
+          <div class="card">
+            <img src="images/sec2.jpg" alt="Image 1">
+            <div class="card-content">
+              <h3>June Picks: "Secret Invasion," 'Asteroid City,' and More</h3>
+              
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/secc2.jpg" alt="Image 2">
+            <div class="card-content">
+              <h3>24 Frames From Wes Anderson Films</h3>
+               </div>
+          </div>
+          <div class="card">
+            <img src="images/secc22.jpg" alt="Image 3">
+            <div class="card-content">
+              <h3>"Black Mirror" Episodes Ranked by IMDb Users</h3>
+              </div>
+            </div>
+          <div class="card">
+            <img src="images/sect2.jpg" alt="Image 3">
+            <div class="card-content">
+              <h3>The 10 Most Anticipated Summer Movies of 2023</h3>
+              </div>
+        </div>
+        <div class="card">
+            <img src="images/sectt2.jpg" alt="Image 3">
+            <div class="card-content">
+              <h3>LGBTQIA+ Hollywood Stars to Watch</h3>
+              </div>
+        </div>
+        <div class="card">
+            <img src="images/sec2.jpg" alt="Image 1">
+            <div class="card-content">
+              <h3>Brand New Movie &amp; TV Posters</h3>
+              
+            </div>
+        </div>
+      </div>
+      <a class="prev" onclick="slidePrev()">&#10094;</a>
+      <a class="next" onclick="slideNext()">&#10095;</a>
+    </div>
+    
+    
+      <!-- section-2 -->
+     
+      
+    
+      <div class="slider2">
+       <h2 >| Pride Month ></h2>
+    <h1>Photos, videos, and picks to celebrate Pride Month</h2>
+           
+        <div class="slides2">
+          <div class="slide2">
+            <img src="images/slider3.jpg" alt="Slide 1">
+          </div>
+          <div class="slide2">
+            <img src="images/slider33.jpg" alt="Slide 2">
+          </div>
+          <div class="slide2">
+            <img src="images/slider333.jpg" alt="Slide 3">
+          </div>
+          <div class="slide2">
+            <img src="images/slider33333.jpg" alt="Slide 3">
+          </div>
+          <div class="slide2">
+            <img src="images/sliderr3.jpg" alt="Slide 3">
+          </div>
+          <body>
+        
+        </div>
+         <a class="prev2" onclick="prevSlide2()">&#10094;</a>
+        <a class="next2" onclick="nextSlide2()">&#10095;</a>
+      </div>
+    
+       <!-- link items -->
+    
+       <aside class="sidebar">
+        <ul class="link-list">
+          <li><a href="#">LGBTQIA+ Power Couples ></a></li>
+          <li><a href="#">Love Around The World ></a></li>
+          <li><a href="#">LGBTQIA+ Icons and Allies ></a></li>
+          <li><a href="#">LGBTQIA+ Hollywood Stars to Watch ></a></li>
+          <li><a href="#">25 Coming-of-age-Stories  ></a></li>
+        </ul>
+      </aside>
+     
+       
+    
+      <!-- card-slider-2 -->
+    
+      <div class="slider2-container">
+        <h2> | Top 10 on IMDB this week</h2>
+        <div class="card2-slider">
+          <div class="card2">
+            <img src="images/caardd2.jpg" alt="Image 1">
+            <div class="card-content">
+              <h3>June Picks: "Secret Invasion," 'Asteroid City,' and More</h3>
+              <p>1.Secret Invasion</p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="card2">
+            <img src="images/carddd2.jpg" alt="Image 2">
+            <div class="card-content">
+              <h3>24 Frames From Wes Anderson Films</h3>
+              <p>2.24 Frames</p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+               </div>
+          </div>
+          <div class="card2">
+            <img src="images/carrd2.jpg" alt="Image 3">
+            <div class="card-content">
+              <h3>"Black Mirror" Episodes Ranked by IMDb Users</h3>
+              <p>3.black mirror</p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+              </div>
+            </div>
+          <div class="card2">
+            <img src="images/carrrd2.jpg" alt="Image 3">
+            <div class="card-content">
+              <h3>The 10 Most Anticipated Summer Movies of 2023</h3>
+              <p>4.Anticipated Summer Movies</p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+              </div>
+        </div>
+        <div class="card2">
+            <img src="images/ccard2.jpg" alt="Image 3">
+            <div class="card-content">
+              <h3>LGBTQIA+ Hollywood Stars to Watch</h3>
+              <p>5.Hollywood </p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+              </div>
+        </div>
+        <div class="card2">
+            <img src="images/caardd2.jpg" alt="Image 1">
+            <div class="card-content">
+              <h3>Brand New Movie &amp; TV Posters</h3>
+              <p>6.Brand New Movie</p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+              
+            </div>
+        </div>
+        <div class="card2">
+          <img src="images/caard2.jpg" alt="Image 1">
+          <div class="card-content">
+            <h3>Brand New Movie &amp; TV Posters</h3>
+            <p>7.The idol</p><br>
+            <button>watch options</button><br><br>
+            <button>Trailer</button>
+            
+          </div>
+      </div>
+      <div class="card2">
+        <img src="images/card2.jpg" alt="Image 1">
+        <div class="card-content">
+          <h3>Brand New Movie &amp; TV Posters</h3>
+          <p>8.black mirror</p><br>
+          <button>watch options</button><br><br>
+          <button>Trailer</button>
+          
+        </div>
+    </div>
+    <div class="card2">
+      <img src="images/the bear.jpg" alt="Image 1">
+      <div class="card-content">
+        <h3>Brand New Movie &amp; TV Posters</h3>
+        <p>9.the bear</p><br>
+        <button>watch options</button><br><br>
+        <button>Trailer</button>
+        
+      </div>
+    </div>
+    <div class="card2">
+      <img src="images/silo.jpg" alt="Image 1">
+      <div class="card-content">
+        <h3>Brand New Movie &amp; TV Posters</h3>
+        <p>10.silo</p><br>
+        <button>watch options</button><br><br>
+        <button>Trailer</button>
+        
+      </div>
+    </div>
+      </div>
+      <a class="prev2" onclick="slidePrev2()">&#10094;</a>
+      <a class="next2" onclick="slideNext2()">&#10095;</a>
+    </div>
+    
+      <!-- card-slider-3 -->
+    
+      <div class="slider3-container">
+        <h2> |Fan Favorites</h2>
+        <h2>This week's top TV and movies</h2>
+        <div class="card3-slider">
+          <div class="card3">
+            <img src="images/caardd2.jpg" alt="Image 1">
+            <div class="card3-content">
+              <h3>June Picks: "Secret Invasion," 'Asteroid City,' and More</h3>
+              <p>1.Secret Invasion</p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+            </div>
+          </div>
+          <div class="card3">
+            <img src="images/carddd2.jpg" alt="Image 2">
+            <div class="card3-content">
+              <h3>24 Frames From Wes Anderson Films</h3>
+              <p>2.24 Frames</p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+               </div>
+          </div>
+          <div class="card3">
+            <img src="images/carrd2.jpg" alt="Image 3">
+            <div class="card3-content">
+              <h3>"Black Mirror" Episodes Ranked by IMDb Users</h3>
+              <p>3.black mirror</p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+              </div>
+            </div>
+          <div class="card3">
+            <img src="images/carrrd2.jpg" alt="Image 3">
+            <div class="card3-content">
+              <h3>The 10 Most Anticipated Summer Movies of 2023</h3>
+              <p>4.Anticipated Summer Movies</p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+              </div>
+        </div>
+        <div class="card3">
+            <img src="images/ccard2.jpg" alt="Image 3">
+            <div class="card3-content">
+              <h3>LGBTQIA+ Hollywood Stars to Watch</h3>
+              <p>5.Hollywood </p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+              </div>
+        </div>
+        <div class="card3">
+            <img src="images/caardd2.jpg" alt="Image 1">
+            <div class="card3-content">
+              <h3>Brand New Movie &amp; TV Posters</h3>
+              <p>6.Brand New Movie</p><br>
+              <button>watch options</button><br><br>
+              <button>Trailer</button>
+              
+            </div>
+        </div>
+        <div class="card3">
+          <img src="images/caard2.jpg" alt="Image 1">
+          <div class="card3-content">
+            <h3>Brand New Movie &amp; TV Posters</h3>
+            <p>7.The idol</p><br>
+            <button>watch options</button><br><br>
+            <button>Trailer</button>
+            
+          </div>
+      </div>
+      <div class="card3">
+        <img src="images/card2.jpg" alt="Image 1">
+        <div class="card3-content">
+          <h3>Brand New Movie &amp; TV Posters</h3>
+          <p>8.black mirror</p><br>
+          <button>watch options</button><br><br>
+          <button>Trailer</button>
+          
+        </div>
+    </div>
+    <div class="card3">
+      <img src="images/the bear.jpg" alt="Image 1">
+      <div class="card3-content">
+        <h3>Brand New Movie &amp; TV Posters</h3>
+        <p>9.the bear</p><br>
+        <button>watch options</button><br><br>
+        <button>Trailer</button>
+        
+      </div>
+    </div>
+    <div class="card3">
+      <img src="images/silo.jpg" alt="Image 1">
+      <div class="card3-content">
+        <h3>Brand New Movie &amp; TV Posters</h3>
+        <p>10.silo</p><br>
+        <button>watch options</button><br><br>
+        <button>Trailer</button>
+        
+      </div>
+    </div>
+      </div>
+      <a class="prev3" onclick="slidePrev3()">&#10094;</a>
+      <a class="next3" onclick="slideNext3()">&#10095;</a>
+    </div>
+    
+    
+    
+    <!-- more to watch -->
+    
+    
+    
+    <div class="more">
+     <div class="more-content">
+        <h3> |More to watch</h3>
+        <p>IMDb helps you select the perfect next show or movie to watch.</p><br>
+        <a>Watch Guide</a>
+        <a>Most Popular</a>
+     
+        
+      </div>
+    
+    </div>
+    
+    <!-- footer -->
+    
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/imdb"  target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+        <a href= "https://www.instagram.com/imdb/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fimdb"  target="_blank"class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+        <a href= "https://www.youtube.com/imdb"target="_blank"class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="links">
+        <a href="#">Get the IMDb App</a>
+        <a href="#">Help</a>
+        <a href="#">Site Index</a>
+        <a href="#">IMDbPro</a>
+        <a href="#">Box Office Mojo</a>
+        <a href="#">IMDb Developer</a>
+        <a href="#">Press Room</a>
+        <a href="#">Advertising</a>
+        <a href="#">Jobs</a>
+        <a href="#">Conditions of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Your Ads Privacy Choices</a>
+        <span>© 1990-2023 by IMDb.com, Inc.</span>
+      </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+<script src = "test2.js"></script>
+    <script src = "test.js"></script>
+</body>
+</html>
